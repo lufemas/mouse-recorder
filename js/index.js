@@ -32,7 +32,10 @@ $playBtn.addEventListener('click', (e) => {
     if(!isPlaying){
         isRecording ? toogleRecord() : null
         isPlaying = true
-    
+
+        $.body.style.cursor = 'none'
+        $recordBtn.style.cursor = 'none'
+
         $playBtn.innerHTML = `PLAYING`
         $playBtn.className = 'playing'
     
@@ -67,6 +70,9 @@ function play(ind, deltaTime = 0){
         },mouseRecord[ind].timeStart - deltaTime)
     }else{
         isPlaying = false;
+        $.body.style.cursor = 'pointer'
+        $recordBtn.style.cursor = 'pointer'
+
         $playBtn.innerHTML = `PLAY`
         $playBtn.className = 'play'
         $fakeCursor.style.transform = `translate(-50px,-50px)`;

@@ -37,7 +37,7 @@ button{
     background-color: rgb(107, 143, 55);
     color: white;
     /* pointer-events: none; */
-    cursor: not-allowed;
+    cursor: none;
 }
 
 #fake-cursor{
