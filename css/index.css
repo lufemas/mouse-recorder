@@ -1,0 +1,48 @@
+
+html,body{
+    height: 100%;
+}
+.ui{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.274) .15rem .15rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.record{
+    background-color: tomato;
+}
+
+.stop{
+    background-color: rgb(201, 81, 60);
+    color: white;
+}
+
+.play{
+    background-color: rgb(177, 238, 85);
+}
+
+.playing{
+    background-color: rgb(107, 143, 55);
+    color: white;
+    /* pointer-events: none; */
+    cursor: not-allowed;
+}
+
+#fake-cursor{
+    position: absolute;
+    max-width: .8rem;
+    max-height: .8rem;
+    transform: translate(-50px, -50px);
+}
