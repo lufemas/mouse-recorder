@@ -22,8 +22,10 @@ window.addEventListener('mousemove', (e)=> {
 
 
 $recordBtn.addEventListener('click', (e) => {
-    initDeltatime = e.timeStamp
-    toogleRecord()
+    if(!isPlaying){
+        initDeltatime = e.timeStamp
+        toogleRecord()
+    }
 })
 
 
